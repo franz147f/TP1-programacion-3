@@ -22,41 +22,21 @@ table, th, td {
             <th>Estado</th>
         </tr>
         <tr>
-            <td id="celda-dni"></td>
-            <td id="celda-actividad"></td>
-            <td id="celda-lugar"></td>
-            <td id="celda-dia"></td>
-            <td id="celda-horario"></td>
-            <td id="estado"></td>
-            
+            <td>Fútbol</td>
+            <td>Cancha general</td>
+            <td>Miércoles</td>
+            <td>19:00</td>
+            <td>Activa</td>
         </tr>
+   
+        <tr>
+            <td>Vóley</td>
+            <td>Cancha techada</td>
+            <td>Viernes</td>
+            <td>17:00</td>
+            <td>Activa</td>
 
     </table>
     
-    <script> 
-        const parametros =new URLSearchParams(window.location.search)
-        const dniIngresado= parametros.get('dni')
-        const actividadIngresado= parametros.get('actividad')
-        const lugarIngresado= parametros.get('lugar')
-        const diaIngresado= parametros.get('dia')
-        const horarioIngresado=parametros.get('horario')
-        if (dniIngreado) {
-            document.getElementById('celda-dni').textContent=dniIngresado;  
-        }
-        if (nombreIngresado) {
-            document.getElementById('celda-actividad').textContent=actividadIngresado;  
-        }
-        if (lugarIngresado) {
-            document.getElementById('celda-lugar').textContent=lugarIngresado;  
-        }
-        if (diaIngresado) {
-            document.getElementById('celda-dia').textContent=diaIngresado;  
-        }
-        if (horarioIngresado) {
-            document.getElementById('celda-horario').textContent=horarioIngresado;
-            document.getElementById('estado').textContent="activo"  
-        }
-    
-    </script>
 </body>
 </html>
