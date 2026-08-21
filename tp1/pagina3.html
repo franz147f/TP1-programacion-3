@@ -40,11 +40,12 @@ table, th, td {
         const lugarIngresado= parametros.get('lugar')
         const diaIngresado= parametros.get('dia')
         const horarioIngresado=parametros.get('horario')
-        if (dniIngreado) {
+        if (dniIngresado) {
             document.getElementById('celda-dni').textContent=dniIngresado;  
         }
-        if (nombreIngresado) {
-            document.getElementById('celda-actividad').textContent=actividadIngresado;  
+        if (actividadIngresado) {
+            document.getElementById('celda-actividad').textContent=actividadIngresado;
+            document.getElementById('estado').textContent="activo"   
         }
         if (lugarIngresado) {
             document.getElementById('celda-lugar').textContent=lugarIngresado;  
