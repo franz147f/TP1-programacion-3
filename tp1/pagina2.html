@@ -26,11 +26,11 @@
                 
             </select>
             <br>
-            <label > Dia </label>
-            <input id="dia" type="text" name="dia" placeholder="Ingrese el dia " disabled >
+            <label for="dia"> Dia </label>
+            <input id="dia" type="text" name="dia" placeholder="Ingrese el dia " value="Martes y Jueves" disabled >
             <br>
-            <label> Horario </label>
-            <input id="horario" type="text" name="horario" placeholder="Ingrese la hora " disabled>
+            <label for="horario"> Horario </label>
+            <input id="horario" type="text" name="horario" placeholder="Ingrese la hora " value="18:00" disabled>
         </fieldset>
     <hr>
         <fieldset>
@@ -39,13 +39,13 @@
             <input id="nombre" type="text" name="nombre" placeholder="ingrese su nombre y Apellido" maxlength="100" required>
             <br>
             <label for="dni"> DNI </label>
-            <input id="dni" type="text" name="dni" inputmode="numeric" pattern="[0-9]*" placeholder="24864587" maxlength="8">
+            <input id="dni" type="text" name="dni" inputmode="numeric" pattern="[0-9]*" placeholder="24864587" maxlength="8" required>
             <br>
             <label for ="fecha_nacimiento"> fecha_nacimiento </label>
             <input id="fecha_nacimiento" type="date" name="fecha_nacimiento" >
             <br>
             <label for="email"> Email </label>
-            <input id="email" type="email" name="actividad" placeholder="Ingrese su email" >
+            <input id="email" type="email" name="email" placeholder="Ingrese su email" >
             <br>
             <label for="telefono"> telefono</label>
             <input id="telefono" type="tel" name="telefono" placeholder="11 1234-5678" >
@@ -58,7 +58,7 @@
             <label for="femenino">Femenino</label>
             <br>
             <input  id="no-binario" type="radio" value="no-binario" name="sexo">
-            <label for="femenino">No-binario</label>
+            <label for="no-binario">No-binario</label>
             <br>
         </fieldset>
     <hr>
@@ -67,7 +67,7 @@
 
             <p>nivel:</p>
 
-            <select id="nivel-deportivo" name="nivel" disabled>
+            <select id="nivel-deportivo" name="nivel" >
                 <option value="Inicial">Inicial</option>
                 <option value="intermedio">intermedio</option>
                 <option value="avanzado">avanzado</option>
@@ -89,13 +89,15 @@
     <hr>
         <fieldset>
             <legend> terminos y condiciones</legend>
-            <p>Acepta los terminos y condiciones?</p>
             <input type="checkbox" name="terminos y condiciones" id="TYC" value="aceptado" required>
+            <label for="TYC">Acepto los términos y condiciones de inscripción</label>
         </fieldset>
         <br>
         <button type="submit">Aceptar</button>
         <button type="reset">Cancelar</button>
     </form>
+
+<footer>Deportes Unca -2026</footer>
 
 </body>
 </html>
