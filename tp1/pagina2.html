@@ -12,7 +12,7 @@
         <fieldset>
             <legend> Actividad </legend>
             <label for="campo-actividad"> Actividad </label>
-            <select id="campo-actividad" name="actividad" required>
+            <select id="campo-actividad" name="actividad" disabled>
                 <option value="futbol">Futbol</option>
                 <option value="voley">Voley</option>
                 <option value="basquet">Basquet</option>
@@ -20,7 +20,7 @@
             </select>
             <br>
             <label for="lugar"> Lugar </label>
-            <select id="lugar" name="lugar"  >
+            <select id="lugar" name="lugar" disabled >
                 <option value="cancha">Cancha principal</option>
                 <option value="polideportivo">Polideportivo</option>
                 
@@ -39,7 +39,7 @@
             <input id="nombre" type="text" name="nombre" placeholder="ingrese su nombre y Apellido" maxlength="100" required>
             <br>
             <label for="dni"> DNI </label>
-            <input id="dni" type="text" name="dni" inputmode="numeric" pattern="[0-9]*" placeholder="24864587" maxlength="8">
+            <input id="dni" type="text" name="dni" inputmode="numeric" pattern="[0-9]*" placeholder="24864587" maxlength="8" required>
             <br>
             <label for ="fecha_nacimiento"> fecha_nacimiento </label>
             <input id="fecha_nacimiento" type="date" name="fecha_nacimiento" >
@@ -67,7 +67,7 @@
 
             <p>nivel:</p>
 
-            <select id="nivel-deportivo" name="nivel" required>
+            <select id="nivel-deportivo" name="nivel" >
                 <option value="Inicial">Inicial</option>
                 <option value="intermedio">intermedio</option>
                 <option value="avanzado">avanzado</option>
@@ -89,24 +89,15 @@
     <hr>
         <fieldset>
             <legend> terminos y condiciones</legend>
-            <p>Acepta los terminos y condiciones?</p>
             <input type="checkbox" name="terminos y condiciones" id="TYC" value="aceptado" required>
+            <label for="TYC">Acepto los términos y condiciones de inscripción</label>
         </fieldset>
         <br>
         <button type="submit">Aceptar</button>
         <button type="reset">Cancelar</button>
     </form>
 
-    <script>
-        const parametros =new URLSearchParams(window.location.search)
-        const actividadIngresada= parametros.get('actividad')
-        const lugarIngresado= parametros.get('lugar')
-        if (actividadIngresada) {
-            document.getElementById('campo-actividad').value=actividadIngresada;  
-        }
-        if (lugarIngresado) {
-            document.getElementById('lugar').value=lugarIngresado;  
-        }
-    </script>
+<footer>Deportes Unca -2026</footer>
+
 </body>
 </html>
