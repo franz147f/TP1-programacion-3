@@ -96,6 +96,17 @@
         <button type="submit">Aceptar</button>
         <button type="reset">Cancelar</button>
     </form>
+        <script>
+        const parametros =new URLSearchParams(window.location.search)
+        const actividadIngresada= parametros.get('actividad')
+        const lugarIngresado= parametros.get('lugar')
+        if (actividadIngresada) {
+            document.getElementById('campo-actividad').value=actividadIngresada;  
+        }
+        if (lugarIngresado) {
+            document.getElementById('lugar').value=lugarIngresado;  
+        }
+    </script>
 
 <footer>Deportes Unca -2026</footer>
 
